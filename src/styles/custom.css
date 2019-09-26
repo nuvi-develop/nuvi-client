@@ -1,0 +1,175 @@
+:root {
+  --header-height: 83px;
+  --footer-height: 54px;
+}
+
+/**
+ * For main content container
+ */
+.container {
+  margin-top: var(--header-height);
+  padding: 20px;
+  min-height: calc(100vh - var(--header-height) - 54px);
+}
+
+/*
+ * For nav-bar
+ */
+.nav-bar {
+  height: var(--header-height);
+}
+
+
+/*
+ * For header
+ */
+
+.header-nav-item {
+  color: rgba(255,255,255,0.5);
+  padding: 8px;
+}
+
+/*
+ * For DisplayErrors
+ */
+
+.validation--errors--label {
+  color:var(--teal);
+  opacity:0.5;
+}
+
+.validation--errors ul li {
+  color:var(--teal);
+  opacity:0.5;
+}
+
+/*
+ * For blank card
+ */
+
+.blank-card {
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blank-card h1,
+.blank-card p {
+  margin-top: 10px
+}
+
+/*
+ * For table
+ */
+.table-container{
+  display: flex;
+
+}
+
+/*
+ * For post detail card
+ */
+.detail-card-container{
+  min-height: 500px;
+  padding: 10px;
+}
+
+.card-container {
+  padding: 10px;
+}
+
+.detail-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail-time{
+  opacity: .5;
+}
+
+.detail-toggles-container {
+  display: flex;
+}
+
+.detail-toggles-arrow{
+  width:30px;
+  height:30px;
+  margin-right: 5px;
+  color: black;
+  opacity: .5;
+}
+
+.detail-toggles-dropdown svg{
+  width:30px;
+  height:30px;
+  opacity: .5;
+
+}
+
+.delete-modal{
+  display: float;
+  margin: auto;
+  width: 300px;
+  height: 200px;
+  z-index: 3;
+  background: blue;
+}
+
+
+/*
+ * style for reply
+ */
+
+.reply {
+  padding: 5px;
+}
+
+
+/*
+ * For board
+ */
+.board-container {
+  display: flex;
+  flex-direction: column;
+  height: 660px
+
+}
+
+.pagination {
+  margin-top:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination li {
+  list-style-type: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.pagination li.active {
+  background-color: var(--dark);
+}
+
+.pagination li:hover {
+  background-color: black;
+}
+
+.chevron {
+  color: var(--primary);
+}
+
+.feed-row {
+  padding: 5px;
+  border-radius: 3px;
+}
+.feed-row:hover {
+  background-color: rgba(0,0,0,.3);
+}
