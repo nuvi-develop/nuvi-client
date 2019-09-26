@@ -55,7 +55,6 @@ export class Provider extends Component {
         [name]:null
       })
     }
-
   }
 
   selectDate = (date) => {
