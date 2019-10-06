@@ -46,8 +46,10 @@ export default class Header extends Component {
       <Navbar.Toggle onClick={this.toggle} aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto" onClick={this.unExpand}>
-          <Nav.Link as={Link} className="header-nav-item" to="/">Home</Nav.Link>
-          <Nav.Link as={Link} className="header-nav-item" to="/about">About</Nav.Link>
+          <Nav.Link as={Link} className="header-nav-item" to="/">DashBoard</Nav.Link>
+          <Nav.Link as={Link} className="header-nav-item" to="/gov">교육청 관계자 </Nav.Link>
+          <Nav.Link as={Link} className="header-nav-item" to="/school">학교 관계자</Nav.Link>
+          <Nav.Link as={Link} className="header-nav-item" to="/student">학생</Nav.Link>
           <Nav.Link as={Link} className="header-nav-item" to="/board">Board</Nav.Link>
         </Nav>
         <Nav className="ml-auto" onClick={this.unExpand}>

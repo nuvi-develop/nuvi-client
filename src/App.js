@@ -8,6 +8,9 @@ import {withContext} from './Context';
 import PrivateRoute from './PrivateRoute';
 
 import Dashboard from './dashboard';
+import DashboardForGov from './dashboardForGov';
+import DashboardForSchool from './dashboardForSchool';
+import DashboardForStudent from './dashboardForStudent';
 import Header from './components/Header';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
@@ -26,6 +29,9 @@ import Page500 from './components/Page500';
 
 
 const DashBoardWithContext = withContext(Dashboard);
+const DashBoardForGovWithContext = withContext(DashboardForGov);
+const DashBoardForSchoolWithContext = withContext(DashboardForSchool);
+const DashBoardForStudentWithContext = withContext(DashboardForStudent);
 const SignInWithContext = withContext(SignIn);
 const SignUpWithContext = withContext(SignUp);
 const SignOutWithContext = withContext(SignOut);
@@ -45,6 +51,9 @@ function App() {
         <div className="container">
           <Switch>
             <PrivateRoute exact path="/" component={DashBoardWithContext}/>
+            <PrivateRoute exact path="/gov" component={DashBoardForGovWithContext}/>
+            <PrivateRoute exact path="/school" component={DashBoardForSchoolWithContext}/>
+            <PrivateRoute exact path="/student" component={DashBoardForStudentWithContext}/>
             <Route path="/signin" component={SignInWithContext}/>
             <Route path="/signup" component={SignUpWithContext}/>
             <Route path="/signout" component={SignOutWithContext}/>
