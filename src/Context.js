@@ -78,8 +78,6 @@ export class Provider extends Component {
     })
     Cookies.remove('authenticatedUser');
   }
-
-
 }
 
 export const Consumer = Context.Consumer
@@ -97,6 +95,4 @@ export const withContext = (Component) => {
       </Context.Consumer>
     )
   }
-
-
 }

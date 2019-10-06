@@ -23,7 +23,6 @@ export default function PrivateRoute({component:Component,...rest}){
               state:{from:props.location}
             }} />
           )
-
           }
           />
         )

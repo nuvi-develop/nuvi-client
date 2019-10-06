@@ -1,4 +1,3 @@
-import data from './database.js';
 import config from './config';
 
 export default class Data {
@@ -97,7 +96,7 @@ export default class Data {
 
   async getPosts(currentPage,contentPerPage){
     const response = await this.api(`/posts?pageNum=${currentPage}&contentPerPage=${contentPerPage}`);
-    
+
     if(response.status ===200){
       return response.json();
     } else if(response.status ===404){
