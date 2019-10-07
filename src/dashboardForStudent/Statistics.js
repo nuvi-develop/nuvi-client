@@ -9,7 +9,7 @@ const Statistics = ({theme}) => (
   <CardImg style={{height: "100px", backgroundSize:"cover"}} top width="100%" src={highschool_img} alt="Card image cap" />
     <CardHeader>
       <CardTitle>
-        2019년 10월 7일 월요일, 충훈고등학교, 김철수<ChevronsRight />
+        2019년 10월 7일 월요일, 동산초등학교, 김철수<ChevronsRight />
       </CardTitle>
     </CardHeader>
     <CardBody>
@@ -95,7 +95,7 @@ const Statistics = ({theme}) => (
               <Row className="d-flex align-items-center mb-4">
                 <Col xs="8">
                   <h2 className="d-flex align-items-center mb-0 font-weight-light">
-                    3학년 10반
+                    6학년 10반
                   </h2>
                 </Col>
               </Row>

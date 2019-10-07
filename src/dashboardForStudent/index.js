@@ -19,7 +19,7 @@ const Default = () => (
       <Col lg="4" className="d-flex">
         <ColCard
           theme={theme}
-          schoolName="충혼고등학교, 김철수"
+          schoolName="동산초등학교, 김철수"
         />
       </Col>
       <Col lg="4" className="d-flex flex-column">
